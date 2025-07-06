@@ -1,4 +1,4 @@
-@tailwind base;
+  @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
@@ -22,10 +22,10 @@
 
 @keyframes pulse-glow {
   0%, 100% {
-    box-shadow: 0 0 20px rgba(251, 191, 36, 0.3);
+    box-shadow: 0 0 20px rgba(210, 180, 140, 0.3); /* لون ترابي */
   }
   50% {
-    box-shadow: 0 0 40px rgba(251, 191, 36, 0.6);
+    box-shadow: 0 0 40px rgba(210, 180, 140, 0.6);
   }
 }
 
@@ -47,7 +47,7 @@
 }
 
 .animate-shimmer {
-  background: linear-gradient(90deg, transparent, rgba(251, 191, 36, 0.4), transparent);
+  background: linear-gradient(90deg, transparent, rgba(210, 180, 140, 0.4), transparent);
   background-size: 200% 100%;
   animation: shimmer 2s infinite;
 }
@@ -63,28 +63,28 @@ html {
 }
 
 ::-webkit-scrollbar-track {
-  background: #0a0a0a;
+  background: #1e1e1e;
   border-radius: 6px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, #d97706, #f59e0b);
+  background: linear-gradient(180deg, #8B5E3C, #D2B48C);
   border-radius: 6px;
-  border: 2px solid #0a0a0a;
+  border: 2px solid #1e1e1e;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(180deg, #f59e0b, #fbbf24);
+  background: linear-gradient(180deg, #A67B5B, #E6CBA8);
 }
 
 /* Selection color */
 ::selection {
-  background-color: #d97706;
+  background-color: #8B5E3C;
   color: #ffffff;
 }
 
 ::-moz-selection {
-  background-color: #d97706;
+  background-color: #8B5E3C;
   color: #ffffff;
 }
 
@@ -93,7 +93,7 @@ button:focus,
 input:focus,
 textarea:focus,
 a:focus {
-  outline: 2px solid #d97706;
+  outline: 2px solid #4B5320;
   outline-offset: 2px;
 }
 
@@ -119,7 +119,7 @@ a:focus {
 
 /* Custom gradient text */
 .gradient-text {
-  background: linear-gradient(135deg, #FFD700, #FFA500, #FF8C00);
+  background: linear-gradient(135deg, #D2B48C, #8B5E3C, #4B5320);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -162,10 +162,10 @@ a:focus {
 
 /* Glass morphism effect */
 .glass {
-  background: rgba(0, 0, 0, 0.2);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(251, 191, 36, 0.2);
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(139, 94, 60, 0.2);
 }
 
 /* Arabic text optimization */
@@ -229,3 +229,17 @@ a:focus {
     color-scheme: dark;
   }
 }
+
+/* Camping product card style */
+.card-camping {
+  background-color: #F5F0E1;
+  border: 1px solid #D2B48C;
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: 0 8px 20px rgba(139, 94, 60, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.card-camping:hover {
+  transform: translateY(-5px);
+}  
